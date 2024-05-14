@@ -101,7 +101,7 @@ window.onload = function() {
             colorTheme: "dark",
             isTransparent: true,
             locale: "in",
-            largeChartUrl: "http://./"
+            largeChartUrl: `https://trading-platform2.onrender.com/stock_detailed_view`
           });
     
           tradingViewWidgetContainer.appendChild(tradingViewWidget);
