@@ -88,7 +88,7 @@ buybtn.addEventListener("click", (event) => {
     const amount = document.getElementById("amount").value;
     const userRef = ref(db, referencePath);
 
-    const curr_price = z;
+    const curr_price = parseFloat(z);
 
     get(userRef)
       .then((snapshot) => {
@@ -172,13 +172,13 @@ sellbtn.addEventListener("click", (event) => {
     const amount = document.getElementById("amount").value;
     const userRef = ref(db, referencePath);
 
-    const curr_price = z;
+    const curr_price = parseFloat(z);
 
     get(userRef)
       .then((snapshot) => {
         if (snapshot.exists()) {
           const userData = snapshot.val();
-          const currBalance = userData.curr_balance;
+          const currBalance = parseFloat(userData.curr_balance);
           const invested = parseFloat(userData.invested);
 
           var qty = 0;

@@ -44,7 +44,7 @@ window.onload = function() {
         .then((snapshot) => {
           if (snapshot.exists()) {
             const userData = snapshot.val();
-            const currBalance = userData.curr_balance;
+            const currBalance = parseFloat(userData.curr_balance);
             const invested = parseFloat(userData.invested).toFixed(2);
             const starting_bal = parseFloat(userData.starting_bal).toFixed(2);
             
