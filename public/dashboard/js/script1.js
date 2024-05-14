@@ -98,7 +98,7 @@ window.onload = function() {
             colorTheme: "dark",
             isTransparent: true,
             locale: "in",
-            largeChartUrl: `https://trading-platform2.onrender.com/stock_detailed_view?tvwidgetsymbol=${holding}`
+            largeChartUrl: `https://trading-platform2.onrender.com/coin`
           });
     
           tradingViewWidgetContainer.appendChild(tradingViewWidget);
