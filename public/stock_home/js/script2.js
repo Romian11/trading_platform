@@ -56,7 +56,7 @@ async function loadTradingViewWidgets(stocks, sectionId) {
         "colorTheme": "dark",
         "isTransparent": false,
         "autosize": true,
-        "largeChartUrl": "http://localhost:3000/stock_detailed_view"
+        "largeChartUrl": "https://trading-platform2.onrender.com/stock_detailed_view"
       }
     `;
 
