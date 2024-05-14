@@ -49,7 +49,7 @@ window.onload = function() {
             const starting_bal = parseFloat(userData.starting_bal).toFixed(2);
             
   
-            balanceElement.textContent = currBalance;
+            balanceElement.textContent = currBalance.toFixed(2);
             investedElement.textContent = invested;
             start_bal.innerText = starting_bal;
             profit_loss_.innerText = parseFloat(starting_bal-invested).toFixed(2);

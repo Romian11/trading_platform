@@ -57,7 +57,7 @@ window.onload = function() {
             const  Phonenumber=(userData.pno)
             const  userEmail=(userData.email)
             
-            balance.innerText = currBalance
+            balance.innerText = currBalance.toFixed(2)
             age.innerText = user_age
             name.innerText = user_name
             p_no.innerText = Phonenumber;

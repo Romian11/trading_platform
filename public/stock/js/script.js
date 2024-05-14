@@ -161,8 +161,8 @@ sellbtn.addEventListener("click", (event) => {
     const amount = document.getElementById("amount").value;
     const userRef = ref(db, referencePath);
 
-    const curr_price = z;
-
+     z = parseFloat(document.getElementById("trade2").innerHTML);
+     
     get(userRef)
       .then((snapshot) => {
         if (snapshot.exists()) {
@@ -195,7 +195,7 @@ sellbtn.addEventListener("click", (event) => {
             console.log(qty - parseFloat(amount));
             update(userRef, {
               [`holding/${coinname}`]: {
-                curr_price: curr_price,
+                curr_price: z,
                 avg_price: newAvgPrice,
                 qty: qty - amount,
               },
@@ -234,17 +234,3 @@ sellbtn.addEventListener("click", (event) => {
       });
   }
 });
-const url = "http://localhost:3000/coin/?tvwidgetsymbol=BTCUSDT";
-// const axios = require('axios'); // Assuming you use Axios for HTTP requests
-// import axios from "axios";
-
-// Function to fetch data from a server
-async function fetchDataFromServer(url) {
-  try {
-    const response = await axios.get(url); // Send GET request to the server
-    console.log(response.data); // Return the data from the response
-
-  } catch (error) {
-    throw new Error(`Error fetching data from server: ${error.message}`);
-  }
-}
