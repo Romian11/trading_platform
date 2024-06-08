@@ -81,7 +81,7 @@
 
     try {
       const response = await axios.request(options);
-  
+       
    price = parseFloat(response.data.price).toFixed(4).replace(/\.?0+$/, '');
   trade2.innerHTML = price;
   console.log( trade2.innerHTML);

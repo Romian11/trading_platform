@@ -14,13 +14,23 @@ app.set("views", "./views");
 app.set("views", path.join(__dirname, "./views"));
 app.set("view engine", "hbs");
 
+
 app.get("/crypto_home", (req, res) => {
   // res.render("index.hbs" , {arr});
-  res.render("crypto/index.hbs");
+  res.render("crypto/Cryptolandingpage.hbs");
 });
+
 app.get("/", (req, res) => {
   res.render("start.hbs");
 });
+
+app.get("/home", (req, res) => {
+  res.render("home.hbs");
+});
+app.get("/cryptolist", (req, res) => {
+  res.render("crypto/cryptolist.hbs");
+});
+
 
 app.get("/coin", (req, res) => {
   const input = req.query.tvwidgetsymbol;
@@ -29,8 +39,12 @@ app.get("/coin", (req, res) => {
 });
 
 app.get("/stock_home", (req, res) => {
-  res.render("stock/stock_start.hbs");
+  res.render("stock/stocklandingpage.hbs");
 });
+app.get("/stocklist", (req, res) => {
+  res.render("stock/stocklist.hbs");
+});
+
 app.get("/stock_detailed_view", (req, res) => {
   const input = req.query.tvwidgetsymbol;
   res.render("stock/stock_detailed_view.hbs", { src: input });
