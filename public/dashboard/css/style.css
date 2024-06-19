@@ -43,7 +43,6 @@ body {
   left: 0;
   right: 0;
   height: 1px;
-
   border-top: 1px solid white;
 }
 
@@ -261,5 +260,17 @@ width: 50px;
 
 #portfolioContainer::-webkit-scrollbar-corner {
   background-color: #222;
+}
+
+@media (max-width: 575px) {
+  
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
 }
 

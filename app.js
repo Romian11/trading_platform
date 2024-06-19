@@ -57,7 +57,7 @@ app.get("/signup", (req, res) => {
   res.render("signup.hbs");
 });
 app.get("/forgetpassword", (req, res) => {
-  res.render("signup.hbs");
+  res.render("forgetpassword.hbs");
 });
 app.get("/details", (req, res) => {
   res.render("start_detail.hbs");
