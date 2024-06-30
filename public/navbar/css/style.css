@@ -17,10 +17,16 @@ i {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-.logo img {
+#logoicon {
   width: 44px;
     height: 44px;
   margin-left: 10px;
+}
+#sitename img{
+  margin-top: 7px;
+    width: 205px;
+    height: 49px;
+    margin-left: 10px;
 }
 /*----------bootstrap-navbar-css------------*/
 .navbar-collapse {
