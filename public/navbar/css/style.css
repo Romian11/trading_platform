@@ -18,15 +18,15 @@ i {
   padding-bottom: 0 !important;
 }
 #logoicon {
-  width: 44px;
-    height: 44px;
+  width: 40px;
+  height: 44px;
   margin-left: 10px;
 }
 #sitename img{
   margin-top: 7px;
-    width: 205px;
-    height: 49px;
-    margin-left: 10px;
+  width: 111px;
+  height: 27px;
+  margin-left: 10px;
 }
 /*----------bootstrap-navbar-css------------*/
 .navbar-collapse {
